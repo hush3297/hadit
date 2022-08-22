@@ -177,9 +177,9 @@ if (isset($_SESSION["cart"]) and $_SESSION["cart"] != "") {
 <h2>Your Cart</h2>
 <br>
 <?php
-$link = mysqli_connect("localhost", "root", "", "hadit");
+$link = mysqli_connect("us-cdbr-east-06.cleardb.net", "b836d0ed61a62f", "d373230c", "heroku_ad6aee6d6d22c9b");
 if($link === false){
-  $link = mysqli_connect("us-cdbr-east-06.cleardb.net", "b836d0ed61a62f", "d373230c", "heroku_ad6aee6d6d22c9b");
+  $link = mysqli_connect("localhost", "root", "", "hadit");
 }
 $sql = "SELECT * FROM products";
 $totalprice = 0;

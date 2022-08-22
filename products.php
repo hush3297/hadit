@@ -173,9 +173,9 @@
 <!--Product Display Here-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <?php
-$$link = mysqli_connect("localhost", "root", "", "hadit");
+$link = mysqli_connect("us-cdbr-east-06.cleardb.net", "b836d0ed61a62f", "d373230c", "heroku_ad6aee6d6d22c9b");
 if($link === false){
-  $link = mysqli_connect("us-cdbr-east-06.cleardb.net", "b836d0ed61a62f", "d373230c", "heroku_ad6aee6d6d22c9b");
+  $link = mysqli_connect("localhost", "root", "", "hadit");
 }
 $sql = "SELECT * FROM products";
 if($result = mysqli_query($link, $sql)){
