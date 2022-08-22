@@ -188,7 +188,7 @@
 <?php
 $link = mysqli_connect("localhost", "root", "", "hadit");
 if($link === false){
-  $link = mysqli_connect("sql307.epizy.com", "epiz_32297569", "Y9DmtWpDKFE", "epiz_32297569_hadit");
+  $link = mysqli_connect("us-cdbr-east-06.cleardb.net", "b836d0ed61a62f", "d373230c", "heroku_ad6aee6d6d22c9b");
 }
 $sql = "SELECT * FROM products";
 $i = 0;
