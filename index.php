@@ -186,7 +186,7 @@
 <!--Item Selection-->
 <div class="card-deck m-5 pb-5">
 <?php
-$link = mysqli_connect("us-cdbr-east-06.cleardb.net", "b836d0ed61a62f", "d373230c", "heroku_ad6aee6d6d22c9b");
+$link = mysqli_connect("localhost", "root", "", "hadit");
 if($link === false){
   $link = mysqli_connect("us-cdbr-east-06.cleardb.net", "b836d0ed61a62f", "d373230c", "heroku_ad6aee6d6d22c9b");
 }
@@ -263,7 +263,7 @@ if($result = mysqli_query($link, $sql)){
 //Close Connection
 mysqli_close($link);
 ?>
-</div>
+</div>  
 <!--Footer-->
 <!--Social Media-->
 <footer class="bg-dark text-center text-white">
